@@ -33,7 +33,7 @@ console.log (a);
 //let
 function l() {
     if (true){
-    let m = 9// let has the block scope so if i declare a variable inside a if block it can't be used outside of it
+    let m = 9// let has the block scope so if i declare a variable inside of block it can't be used outside of it
     console.log(m);
     }
    // console.log(m); ->outside of the block we will receive an error
@@ -157,7 +157,7 @@ async function getData() {
 }
   getData();
 
-//1.8 Closures closure gives a function access to its outer scope
+//1.8 Closures  gives a function access to its outer scope
 function studFunc() {
     const name = "Ciubuc";
     function displayName() { //the inner function, that forms a closure
@@ -170,13 +170,17 @@ function studFunc() {
   mystudFunc();
 
 //1.9 useState. useRef.
-//useState allows you to add a state to functional components. The useState hook allows you to add state to functional components in React
-
+//useState allows you to add a state to functional components. It allows you to add state to your components, making them dynamic and interactive.
+//State Management: useState helps manage state within a component.
+//Re-renders on Change: The component re-renders when the state changes.
+//Batched Updates: React batches multiple state updates for performance.
 //syntax 
 //const [state, setState] = useState(initialValue);
 
-//useRef allows you to add a state to functional components. The useRef hook returns a mutable ref object
-
+//useRef primarily used for accessing and manipulating DOM elements directly. It persists values between renders without causing re-renders. The useRef hook returns a mutable ref object. 
+//DOM Reference: Provides a way to reference and interact with DOM elements.
+//No Re-renders on Change: Changing the ref value does not trigger a re-render.
+//Persistent Values: Keeps the same object reference between renders.
 //syntax 
 //const myRef = useRef(initialValue);
 
